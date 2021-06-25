@@ -1,0 +1,23 @@
+<div style="grid-column: span 3; border-bottom: solid 2px black">
+  <span style="font-family: 'Big Shoulders Stencil Display', cursive; font-size: 3rem;">{{aDonut?.name}}</span>
+
+  <a (click)="changeShow()" style="align-self: center; margin-left: 1%;">more info</a>
+
+</div>
+
+<div class="donutDetails" *ngIf="sh" style="">
+  <div>
+    {{ aDonut.calories }} calories
+  </div>
+  <div>Extras:</div>
+  <div *ngFor="let e of aDonut.extras">
+    <div style="font-weight: normal">
+      &nbsp;&nbsp;&#10148;<i>{{ e }}</i>
+    </div>
+  </div>
+
+  <img [src]="aDonut.photo" style="max-width: 50%; padding: 10px; border-radius: 10px; max-height: 250px;" />
+
+</div>
+
+

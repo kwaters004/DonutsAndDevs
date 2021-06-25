@@ -1,0 +1,8 @@
+<div *ngIf="donuts?.results">
+
+  <div class="donutLoop" *ngFor="let d of donuts.results">
+
+    <app-donut-detail [donutLink]="d.ref" ></app-donut-detail>
+
+  </div>
+</div>

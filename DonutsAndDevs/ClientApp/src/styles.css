@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+app-donuts, app-famous-people{
+    grid-column: 2/3;
+}
+.donutShop{
+    grid-column: span 3;
+}
+
+.donutLoop{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.loopTitles{
+    font-weight: bold;
+}
+
+app-donut-detail{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.donutDetails > div{
+    font-weight: bold;
+}
+
+.donutDetails {
+  grid-column: span 3;
+  background-color: lightgrey;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  filter: drop-shadow(2px 4px 6px black)
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.devDetails{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    margin: 10px;
+    padding: 10px;
+    border: solid 2px antiquewhite;
+    grid-column: 2/3;
+}
+
+.devInnovation {
+  background-color: white;
+  border-radius: 5px;
+  filter: drop-shadow(2x 4x 6x black);
+  padding: 10px;
+  border: black solid 1px;
+}
+
+.devName {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  font-size: 2.5rem;
+  grid-column: span 2;
+}
+
+.devDetails:hover{
+    border: white 2px solid
+}
+
+.devHouse{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+

@@ -1,0 +1,7 @@
+<a (click)="showDetails()" style="grid-column: span 2">
+  <div class="devName">{{ theDev.firstName }} {{ theDev.lastName }}</div>
+
+
+<div *ngIf="showDetes">In {{ theDev.year }}:</div>
+<div *ngIf="showDetes" class="devInnovation">{{ theDev.innovation }}</div>
+</a>
