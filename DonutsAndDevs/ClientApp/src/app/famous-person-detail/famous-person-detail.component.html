@@ -2,6 +2,9 @@
   <div class="devName">{{ theDev.firstName }} {{ theDev.lastName }}</div>
 
 
-<div *ngIf="showDetes">In {{ theDev.year }}:</div>
-<div *ngIf="showDetes" class="devInnovation">{{ theDev.innovation }}</div>
+  <div class="devHiddenDetes" *ngIf="showDetes">
+    <div style="grid-column: span 2">In {{ theDev.year }}:</div>
+    <div class="devInnovation">{{ theDev.innovation }}</div>
+    <a style="text-align: center; align-self: center; font-family: 'Times New Roman', Times, serif; font-size: 2rem;" href="https://www.wikipedia.org/wiki/{{ theDev.firstName }}_{{ theDev.lastName }}" target="_blank">Wiki</a>
+  </div>
 </a>

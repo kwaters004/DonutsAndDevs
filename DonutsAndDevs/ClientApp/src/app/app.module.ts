@@ -10,6 +10,7 @@ import { DonutDetailComponent } from './donut-detail/donut-detail.component';
 import { DonutsComponent } from './donuts/donuts.component';
 import { FamousPeopleComponent } from './famous-people/famous-people.component';
 import { FamousPersonDetailComponent } from './famous-person-detail/famous-person-detail.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { FamousPersonDetailComponent } from './famous-person-detail/famous-perso
     DonutDetailComponent,
     DonutsComponent,
     FamousPeopleComponent,
-    FamousPersonDetailComponent
+    FamousPersonDetailComponent,
+    HomeComponent
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -27,6 +30,8 @@ import { FamousPersonDetailComponent } from './famous-person-detail/famous-perso
     RouterModule.forRoot([
       { path: 'donuts', component: DonutsComponent },
       { path: 'famous-people', component: FamousPeopleComponent },
+      { path: '', component: HomeComponent, pathMatch: 'full' }
+
     ])
   ],
   providers: [],
