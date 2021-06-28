@@ -1,0 +1,12 @@
+
+<a *ngIf="!sh" (click)="showPets()" >Show More</a>
+<a *ngIf="sh" (click)="showPets()" >Show Less</a>
+<ng-container *ngIf="sh">
+<div class="petGrid">
+  <img src="https://t2.ea.ltmcdn.com/en/images/1/9/4/img_are_there_male_calico_cats_2491_orig.jpg" alt="Autumn" />
+  <img src="#" alt="Alternate Text" />
+  <img src="#" alt="Alternate Text" />
+  <img src="https://i.pinimg.com/originals/dc/56/96/dc56967d8633bf599024dffb5e2e64e6.jpg" alt="Banner" />
+
+</div>
+</ng-container>

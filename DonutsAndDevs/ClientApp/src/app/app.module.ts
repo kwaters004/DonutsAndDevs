@@ -11,6 +11,8 @@ import { DonutsComponent } from './donuts/donuts.component';
 import { FamousPeopleComponent } from './famous-people/famous-people.component';
 import { FamousPersonDetailComponent } from './famous-person-detail/famous-person-detail.component';
 import { HomeComponent } from './home/home.component';
+import { PetDetailsComponent } from './pet-details/pet-details.component';
+import { PetsComponent } from './pets/pets.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,10 @@ import { HomeComponent } from './home/home.component';
     DonutsComponent,
     FamousPeopleComponent,
     FamousPersonDetailComponent,
-    HomeComponent
+    HomeComponent,
+    PetDetailsComponent,
+    PetsComponent,
+
 
   ],
   imports: [
@@ -32,7 +37,8 @@ import { HomeComponent } from './home/home.component';
       { path: 'famous-people', component: FamousPeopleComponent },
       { path: '', component: HomeComponent, pathMatch: 'full' }
 
-    ])
+    ]),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,8 @@
-﻿import { Component } from '@angular/core';
+import { Component } from '@angular/core';
+import { MatDialogsModule } from '@angular-material-extensions/core';
+
+
+
 
 @Component({
     selector: 'app-home',
@@ -7,8 +11,13 @@
 })
 /** home component*/
 export class HomeComponent {
+
+
+
     /** home ctor */
     constructor() {
 
-    }
+  }
+
+
 }
